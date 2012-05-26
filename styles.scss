@@ -1,0 +1,288 @@
+@mixin content {
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    width: 940px;
+}
+
+@mixin h123 {
+	h1 { display: none; }
+	h2 { display: none; }
+	h3 { display: none; }
+}
+
+body {
+	font-family: Georgia, Verdana, sans-serif;
+	font-size: 14pt;
+	color: #E0E0E0;
+}
+
+#myself {
+	width: 100%;
+	height: 240px;
+	background-color: #0C0719;
+	padding-top: 20px;
+	.content {
+		@include content;
+		#title {
+			background: url("images/sprite.png") no-repeat scroll 0px -66px transparent;
+			margin: 0 auto;
+			height: 47px;
+			width: 350px;
+			margin-bottom: 6px;
+			@include h123;
+		}
+		#tag { display: block; margin: 0 auto; width: 150px; }
+		#cvs {
+			margin: 0 auto;
+			width: 520px;
+			position: relative;
+			margin-top: 55px;
+			.left-margin { margin-left: 160px; }
+			.download {
+				float: left;
+				position: relative;
+				.large-button {
+					width: 62px;
+					height: 62px;
+					display:block;
+				}
+				.button {
+					border-radius: 100px 100px 100px 100px;
+					box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+					cursor: pointer;
+					display:inline-block;
+					float: left;
+					margin: -5px 0 0 -8px;
+					padding: 4px 4px 3px 6px;
+					position:absolute;
+					left: -2px;
+					top: -1px;
+					.img {
+						background-image: url("images/sprite.png");
+						background-repeat: no-repeat;
+						display: inline-block;
+					}
+					.arrow {
+						background-position: -285px -28px;
+						height: 18px;
+						width: 18px;
+					}
+					.magnify {
+						background-position: -308px -28px;
+						height: 18px;
+						width: 18px;
+					}
+				}	
+				.download-text {
+					font-family:Verdana,sans-serif;
+					font-size: 0.8em;
+					margin-top: 4px;
+				}
+			}
+		}
+	}
+}
+
+#paper-rip {
+	background: url("images/paper-rip.jpg") repeat-x scroll left top transparent;
+	height: 17px;
+	width: 100%;
+}
+
+#skills {
+	width: 100%;
+	height: 520px;
+	background: url("images/paper-texture.jpg") repeat scroll left top transparent;
+	padding-top: 30px;
+	.content {
+		@include content;
+		#title {
+			background: url("images/sprite.png") no-repeat scroll 0px -113px transparent;
+			height: 35px;
+			width: 354px;
+			@include h123;
+		}
+		#graph {
+			width: 780px;
+			height: 405px;
+			margin-top: 30px;
+			background: url("images/graph.png") no-repeat scroll left top transparent;
+			display: inline-block;
+			.about {
+				color: black;
+				margin-left: 500px;
+			}
+			.text {
+				float: left;
+				margin-left: 546px;
+				margin-top: 184px;
+				span { display: none; }
+				div { height: 26px; }
+				.bash {
+					background: url("images/sprite.png") no-repeat scroll -5px -216px transparent;
+					width: 54px;
+				}
+				.android {
+					background: url("images/sprite.png") no-repeat scroll -227px -244px transparent;
+					width: 94px;
+				}
+				.html {
+					background: url("images/sprite.png") no-repeat scroll -58px -244px transparent;
+					width: 106px;
+				}
+				.sql {
+					background: url("images/sprite.png") no-repeat scroll -176px -244px transparent;
+					width: 40px;
+				}
+				.php {
+					background: url("images/sprite.png") no-repeat scroll -5px -244px transparent;
+					width: 40px;
+				}
+				.aspnet {
+					background: url("images/sprite.png") no-repeat scroll -70px -216px transparent;
+					width: 94px;
+				}
+				.winforms {
+					background: url("images/sprite.png") no-repeat scroll -175px -216px transparent;
+					width: 160px;
+				}
+			}
+		}
+	}
+}
+
+#paper-fade {
+	background: url("images/paper-jagged2.png") repeat-x scroll left top transparent;
+	height: 4px;
+	width: 100%;
+}
+
+#references {
+	width: 100%;
+	height: 610px;
+	padding-top: 30px;
+	.content {
+		@include content;
+		#title {
+			background: url("images/sprite.png") no-repeat scroll 0px -148px transparent;
+			height: 34px;
+			width: 160px;
+			@include h123;
+		}
+		.quote {
+			width: 470px;
+			padding: 0.8em;
+			margin: 0.5em 0 4px 0;
+			color: #fff;
+			border-radius: 1em;
+			line-height: 1.2em;
+			margin-top: 20px;
+			cursor: pointer;
+		}
+		.sheal {
+			background: url("images/sprite.png") no-repeat scroll 0px -270px transparent;
+			height: 23px;
+			width: 250px;
+			margin-top: 8px;
+			span { display: none; }
+		}
+		.grontmij {
+			background: url("images/sprite.png") no-repeat scroll -103px -320px transparent;
+			width: 114px;
+			height: 32px;
+		}
+		.dteagle {
+			background: url("images/sprite.png") no-repeat scroll 0px -294px transparent;
+			height: 23px;
+			width: 276px;
+			margin-top: 8px;
+			span { display: none; }
+		}
+		.siftgroups {
+			background: url("images/sprite.png") no-repeat scroll -2px -321px transparent;
+			width: 100px;
+			height: 37px;
+		}
+		.linkedin {
+			background: url("images/sprite.png") no-repeat scroll -346px -3px transparent;
+			width: 24px;
+			height: 24px;
+			display: block;
+			margin-top: 5px;
+		}
+	}
+}
+
+#links {
+	width: 100%;
+	height: 300px;
+	background: url("images/workflow-pattern.gif") repeat scroll left top transparent;
+	padding-top: 30px;
+	color: #eee;
+	font-size: 0.8em;
+	.content {
+		@include content;
+		#title {
+			background: url("images/sprite.png") no-repeat scroll -170px -164px transparent;
+			height: 33px;
+			width: 140px;
+			@include h123;
+		}
+		.subtitle {
+			background: url("images/sprite.png") no-repeat scroll -170px -144px transparent;
+			height: 53px;
+			width: 140px;
+			clear: both;
+			@include h123;
+		}
+		.link {
+			padding-top: 15px;
+			clear: both;
+			p {
+				position: relative;
+				float: left;
+				width: 600px;
+				margin-left: 18px;
+			}
+			.github {
+				background: url("images/sprite.png") no-repeat scroll -220px -320px transparent;
+				height: 41px;
+				width: 88px;
+				float: left;
+			}
+			.linkedin {
+				background: url("images/sprite.png") no-repeat scroll -280px -6px transparent;
+				height: 20px;
+				width: 88px;
+				float: left;
+			}
+		}
+	}
+}
+
+/*********************************************
+ * general classes
+ */
+
+.left { float: left; }
+.right { float: right; }
+
+.pdf { background: url("images/sprite.png") no-repeat scroll 0px 0px transparent; }
+.epub { background: url("images/sprite.png") no-repeat scroll -60px 0px transparent; }
+.word { background: url("images/sprite.png") no-repeat scroll -122px 0px transparent; }
+.html { background: url("images/sprite.png") no-repeat scroll -184px 0px transparent; }
+
+.blue {
+	background: -moz-linear-gradient(center top, #2E63C4, #1B3B74) repeat scroll 0 0 transparent;
+	background-color: #2E63C4;
+	color: #FFFFFF;
+}
+.blue:hover { box-shadow: 0 0 10px #2E63C4; }
+
+.green {
+	background: -moz-linear-gradient(center top, #70CE31, #296D07) repeat scroll 0 0 transparent;
+	background-color: #70CE31;
+	color: #FFFFFF;
+}
+.green:hover { box-shadow: 0 0 10px #70CE31; }
